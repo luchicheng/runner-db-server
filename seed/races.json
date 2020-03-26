@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Boston Marathon",
+    "year": "2020",
+    "dor": "2020-09-14",
+    "distance": "42.2K",
+    "wmm": "Y",
+    "bq": "Y",
+    "desc": "The Boston Marathon is an annual marathon race hosted by several cities in greater Boston in eastern Massachusetts, United States.",
+    "comment": "UPDATE - 2020 BOSTON MARATHON POSTPONED"
+  },
+  {
+    "name": "Newyork Marathon",
+    "year": "2020",
+    "dor": "2020-11-01",
+    "distance": "42.2K",
+    "wmm": "Y",
+    "bq": "Y",
+    "desc": "The New York City Marathon (currently branded TCS New York City Marathon for sponsorship reasons)",
+    "comment": ""
+  },
+  {
+    "name": "SWMT Marathon",
+    "year": "2020",
+    "dor": "2020-10-21",
+    "distance": "42.2K",
+    "wmm": "N",
+    "bq": "Y",
+    "desc": "water front",
+    "comment": ""
+  },
+  {
+    "name": "TORONTO Marathon",
+    "year": "2020",
+    "dor": "2020-10-01",
+    "distance": "42.2K",
+    "wmm": "N",
+    "bq": "Y",
+    "desc": "toronto marathon",
+    "comment": ""
+  },
+  {
+    "name": "ATB",
+    "year": "2020",
+    "dor": "2020-10-31",
+    "distance": "30K",
+    "wmm": "N",
+    "bq": "N",
+    "desc": "ATB 30K",
+    "comment": ""
+  }
+]
