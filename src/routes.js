@@ -12,67 +12,67 @@ const DataQueryController = require('./controllers/DataQueryController')
 const isAuthenticated = require('./policies/isAuthenticated')
 
 module.exports = (app) => {
-  app.post('/register',
+  app.post('/backapi/register',
     AuthenticationControllerPolicy.register,
     AuthenticationController.register)
-  app.post('/login',
+  app.post('/backapi/login',
     AuthenticationController.login)
 
-  app.get('/songs',
+  app.get('/backapi/songs',
     SongsController.index)
-  app.get('/songs/:songId',
+  app.get('/backapi/songs/:songId',
     SongsController.show)
-  app.put('/songs/:songId',
+  app.put('/backapi/songs/:songId',
     SongsController.put)
-  app.post('/songs',
+  app.post('/backapi/songs',
     SongsController.post)
 
-  app.get('/bookmarks',
+  app.get('/backapi/bookmarks',
     isAuthenticated,
     BookmarksController.index)
-  app.post('/bookmarks',
+  app.post('/backapi/bookmarks',
     isAuthenticated,
     BookmarksController.post)
-  app.delete('/bookmarks/:bookmarkId',
+  app.delete('/backapi/backapi/bookmarks/:bookmarkId',
     isAuthenticated,
     BookmarksController.remove)
 
-  app.get('/histories',
+  app.get('/backapi/histories',
     isAuthenticated,
     HistoriesController.index)
-  app.post('/histories',
+  app.post('/backapi/histories',
     isAuthenticated,
     HistoriesController.post)
 
-  app.get('/runners',
+  app.get('/backapi/runners',
     // isAuthenticated,
     RunnersController.index)
-  app.get('/runners/:runnerId',
+  app.get('/backapi/runners/:runnerId',
     // isAuthenticated,
     RunnersController.show)
-  app.get('/runners/extradata/:runnerId',
+  app.get('/backapi/runners/extradata/:runnerId',
     // isAuthenticated,
     RunnersController.showExtraData)
-  app.put('/runners/:runnerId',
+  app.put('/backapi/runners/:runnerId',
     isAuthenticated,
     RunnersController.put)
-  app.post('/runners',
+  app.post('/backapi/runners',
     isAuthenticated,
     RunnersController.post)
-  app.delete('/runners/:runnerId',
+  app.delete('/backapi/runners/:runnerId',
     isAuthenticated,
     RunnersController.del)
 
-  app.get('/races',
+  app.get('/backapi/races',
     // isAuthenticated,
     RacesController.index)
-  app.get('/racesObj',
+  app.get('/backapi/racesObj',
     // isAuthenticated,
     RacesController.all_valid_objects)
-  app.post('/races',
+  app.post('/backapi/races',
     isAuthenticated,
     RacesController.post)
-  app.get('/validRaces',
+  app.get('/backapi/validRaces',
     // isAuthenticated,
     RacesController.all_valid)
   app.delete('/races/:raceId',
@@ -82,42 +82,42 @@ module.exports = (app) => {
   // app.get('/trainingrecords',
   //   // isAuthenticated,
   //   TrainingRecordsController.index)
-  app.post('/trainingrecords',
+  app.post('/backapi/trainingrecords',
     // isAuthenticated,
     TrainingRecordsController.post)
-  app.put('/trainingrecords/:trainingrecordId',
+  app.put('/backapi/trainingrecords/:trainingrecordId',
     // isAuthenticated,
     TrainingRecordsController.put)
-  app.delete('/trainingrecords/:trainingrecordId',
+  app.delete('/backapi/trainingrecords/:trainingrecordId',
     // isAuthenticated,
     TrainingRecordsController.remove)
-  app.get('/runners/:runnerId/trainingrecords',
+  app.get('/backapi/runners/:runnerId/trainingrecords',
     // isAuthenticated,
     TrainingRecordsController.indexByRunnerRecently)
 
   // app.get('/racerecords',
   //   // isAuthenticated,
   //   RaceRecordsController.index)
-  app.post('/racerecords',
+  app.post('/backapi/racerecords',
     // isAuthenticated,
     RaceRecordsController.post)
-  app.put('/racerecords/:racerecordId',
+  app.put('/backapi/racerecords/:racerecordId',
     // isAuthenticated,
     RaceRecordsController.put)
-  app.delete('/racerecords/:racerecordId',
+  app.delete('/backapi/racerecords/:racerecordId',
     // isAuthenticated,
     RaceRecordsController.remove)
-  app.get('/runners/:runnerId/racerecords',
+  app.get('/backapi/runners/:runnerId/racerecords',
     // isAuthenticated,
     RaceRecordsController.indexByRunner)
 
-  app.get('/data/trainingrecords',
+  app.get('/backapi/data/trainingrecords',
     // isAuthenticated,
     DataQueryController.queryTrainingRecords)
-  app.get('/data/racerecords',
+  app.get('/backapi/data/racerecords',
     // isAuthenticated,
     DataQueryController.queryRaceRecords)
-  app.get('/data/topracerecords',
+  app.get('/backapi/data/topracerecords',
     // isAuthenticated,
     DataQueryController.queryTopRaceRecords)
 }
