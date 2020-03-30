@@ -7,7 +7,9 @@ const {
   History,
   Race,
   TrainingRecord,
-  RaceRecord
+  RaceRecord,
+  Album,
+  Photo
 } = require('../src/models')
 
 const Promise = require('bluebird')
@@ -19,8 +21,10 @@ const histories = require('./histories.json')
 const races = require('./races.json')
 const trainingRecords = require('./trainingRecords.json')
 const raceRecords = require('./raceRecords.json')
+const photo = require('./photo.json')
+const album = require('./album.json')
 
-sequelize.sync({force: true})
+sequelize.sync({ force: true })
   .then(async function () {
     await Promise.all(
       users.map(user => {
@@ -67,6 +71,18 @@ sequelize.sync({force: true})
     await Promise.all(
       raceRecords.map(tr => {
         RaceRecord.create(tr)
+      })
+    )
+
+    await Promise.all(
+      album.map(tr => {
+        Album.create(tr)
+      })
+    )
+
+    await Promise.all(
+      photo.map(tr => {
+        Photo.create(tr)
       })
     )
   })

@@ -8,6 +8,8 @@ const RacesController = require('./controllers/RacesController')
 const TrainingRecordsController = require('./controllers/TrainingRecordsController')
 const RaceRecordsController = require('./controllers/RaceRecordsController')
 const DataQueryController = require('./controllers/DataQueryController')
+const PhotosController = require('./controllers/PhotosController')
+const AlbumsController = require('./controllers/AlbumsController')
 
 const isAuthenticated = require('./policies/isAuthenticated')
 
@@ -78,10 +80,6 @@ module.exports = (app) => {
   app.delete('/races/:raceId',
     isAuthenticated,
     RacesController.del)
-
-  // app.get('/trainingrecords',
-  //   // isAuthenticated,
-  //   TrainingRecordsController.index)
   app.post('/backapi/trainingrecords',
     // isAuthenticated,
     TrainingRecordsController.post)
@@ -95,9 +93,6 @@ module.exports = (app) => {
     // isAuthenticated,
     TrainingRecordsController.indexByRunnerRecently)
 
-  // app.get('/racerecords',
-  //   // isAuthenticated,
-  //   RaceRecordsController.index)
   app.post('/backapi/racerecords',
     // isAuthenticated,
     RaceRecordsController.post)
@@ -120,4 +115,21 @@ module.exports = (app) => {
   app.get('/backapi/data/topracerecords',
     // isAuthenticated,
     DataQueryController.queryTopRaceRecords)
+
+  app.post('/backapi/importPhotos',
+    // isAuthenticated,
+    PhotosController.importPhotos)
+
+  app.get('/backapi/albums',
+    // isAuthenticated,
+    AlbumsController.index)
+  app.post('/backapi/albums',
+    // isAuthenticated,
+    AlbumsController.post)
+  app.delete('/albums/:albumId',
+    // isAuthenticated,
+    AlbumsController.del)
+  app.get('/backapi/albums/:albumId/photos',
+    // isAuthenticated,
+    AlbumsController.indexPhotos)
 }
