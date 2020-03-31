@@ -126,7 +126,7 @@ module.exports = (app) => {
   app.post('/backapi/albums',
     // isAuthenticated,
     AlbumsController.post)
-  app.delete('/albums/:albumId',
+  app.delete('/backapi/albums/:albumId',
     // isAuthenticated,
     AlbumsController.del)
   app.get('/backapi/albums/:albumId/photos',
