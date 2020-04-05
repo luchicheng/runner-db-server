@@ -1,18 +1,26 @@
 [
-  {
-    "gid": "iSoK2eSt1hwwUWT9A",
-    "name": "Reganar ultra team 1, first test album",
-    "comment": "from Yan.H"
-  },
-  {
-    "gid": "e1i7L2KnuNeHUyfL9",
-    "name": "Chicago 2019",
-    "comment": "from Carol.Y"
-  },
-  {
-    "gid": "NyVDeXFmPAjvoqACA",
-    "name": "testing",
-    "comment": "from Luchi.C"
-  }
-  
+    {
+        "id": 1,
+        "name": "Reganar ultra team 1, first test album",
+        "gid": "iSoK2eSt1hwwUWT9A",
+        "comment": "from Yan.H",
+        "createdAt": "2020-03-31T15:22:42.103Z",
+        "updatedAt": "2020-03-31T15:22:42.103Z"
+    },
+    {
+        "id": 2,
+        "name": "Chicago 2019",
+        "gid": "e1i7L2KnuNeHUyfL9",
+        "comment": "from Carol.Y",
+        "createdAt": "2020-03-31T15:22:42.104Z",
+        "updatedAt": "2020-03-31T15:22:42.104Z"
+    },
+    {
+        "id": 3,
+        "name": "testing",
+        "gid": "NyVDeXFmPAjvoqACA",
+        "comment": "from Luchi.C",
+        "createdAt": "2020-03-31T15:22:42.104Z",
+        "updatedAt": "2020-03-31T15:22:42.104Z"
+    }
 ]

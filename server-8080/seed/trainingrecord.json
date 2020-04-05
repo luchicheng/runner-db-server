@@ -1,0 +1,112 @@
+[
+    {
+        "id": 1,
+        "date": "2020-02-11",
+        "distance": "10K",
+        "time": "00:50:00",
+        "currentPerf": "true",
+        "comment": "Runner #1, 10K tuneup, used 50 mins",
+        "createdAt": "2020-03-31T15:22:42.068Z",
+        "updatedAt": "2020-03-31T15:22:42.068Z",
+        "RunnerId": 1
+    },
+    {
+        "id": 2,
+        "date": "2020-02-12",
+        "distance": "21.1K",
+        "time": "02:11:00",
+        "currentPerf": "true",
+        "comment": "Runner #2, 30K LR, used 2:30:00",
+        "createdAt": "2020-03-31T15:22:42.069Z",
+        "updatedAt": "2020-03-31T15:22:42.069Z",
+        "RunnerId": 1
+    },
+    {
+        "id": 3,
+        "date": "2020-02-13",
+        "distance": "10K",
+        "time": "00:40:00",
+        "currentPerf": "true",
+        "comment": "Runner #1, 10K tuneup, used 50 mins",
+        "createdAt": "2020-03-31T15:22:42.069Z",
+        "updatedAt": "2020-03-31T15:22:42.069Z",
+        "RunnerId": 1
+    },
+    {
+        "id": 4,
+        "date": "2020-02-14",
+        "distance": "5K",
+        "time": "00:45:00",
+        "currentPerf": "true",
+        "comment": "Runner #1, 10K tuneup, used 50 mins",
+        "createdAt": "2020-03-31T15:22:42.069Z",
+        "updatedAt": "2020-03-31T15:22:42.069Z",
+        "RunnerId": 1
+    },
+    {
+        "id": 5,
+        "date": "2020-02-18",
+        "distance": "5K",
+        "time": "00:33:00",
+        "currentPerf": "true",
+        "comment": "Runner #1, 10K tuneup, used 50 mins",
+        "createdAt": "2020-03-31T15:22:42.069Z",
+        "updatedAt": "2020-03-31T15:22:42.069Z",
+        "RunnerId": 1
+    },
+    {
+        "id": 6,
+        "date": "2020-02-11",
+        "distance": "10K",
+        "time": "00:50:00",
+        "currentPerf": "true",
+        "comment": "Runner #1, 10K tuneup, used 50 mins",
+        "createdAt": "2020-03-31T15:22:42.069Z",
+        "updatedAt": "2020-03-31T15:22:42.069Z",
+        "RunnerId": 2
+    },
+    {
+        "id": 7,
+        "date": "2020-02-12",
+        "distance": "21.1K",
+        "time": "02:33:00",
+        "currentPerf": "true",
+        "comment": "Runner #2, 30K LR, used 2:30:00",
+        "createdAt": "2020-03-31T15:22:42.070Z",
+        "updatedAt": "2020-03-31T15:22:42.070Z",
+        "RunnerId": 2
+    },
+    {
+        "id": 8,
+        "date": "2020-02-13",
+        "distance": "10K",
+        "time": "00:55:00",
+        "currentPerf": "true",
+        "comment": "Runner #1, 10K tuneup, used 50 mins",
+        "createdAt": "2020-03-31T15:22:42.070Z",
+        "updatedAt": "2020-03-31T15:22:42.070Z",
+        "RunnerId": 2
+    },
+    {
+        "id": 9,
+        "date": "2020-02-14",
+        "distance": "5K",
+        "time": "00:33:00",
+        "currentPerf": "true",
+        "comment": "Runner #1, 10K tuneup, used 50 mins",
+        "createdAt": "2020-03-31T15:22:42.070Z",
+        "updatedAt": "2020-03-31T15:22:42.070Z",
+        "RunnerId": 2
+    },
+    {
+        "id": 10,
+        "date": "2020-02-02",
+        "distance": "5K",
+        "time": "00:22:00",
+        "currentPerf": "true",
+        "comment": "Runner #1, 10K tuneup, used 50 mins",
+        "createdAt": "2020-03-31T15:22:42.070Z",
+        "updatedAt": "2020-03-31T15:22:42.070Z",
+        "RunnerId": 2
+    }
+]

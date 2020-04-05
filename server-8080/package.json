@@ -7,7 +7,8 @@
     "start": "nodemon src/app.js --exec  \"npm run lint && node\"",
     "lint": "eslint src/**/*.js",
     "lint:fix": "eslint src/**/*.js  --fix",
-    "seed": "node seed"
+    "seed": "node seed",
+    "unseed": "node unseed"
   },
   "keywords": [],
   "author": "Luchi Cheng,luchi.cheng@gmail.com",

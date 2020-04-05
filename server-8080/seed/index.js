@@ -14,13 +14,13 @@ const {
 
 const Promise = require('bluebird')
 const songs = require('./songs.json')
-const runners = require('./runners.json')
-const users = require('./users.json')
+const runners = require('./runner.json')
+const users = require('./user.json')
 const bookmarks = require('./bookmarks.json')
 const histories = require('./histories.json')
-const races = require('./races.json')
-const trainingRecords = require('./trainingRecords.json')
-const raceRecords = require('./raceRecords.json')
+const races = require('./race.json')
+const trainingRecords = require('./trainingrecord.json')
+const raceRecords = require('./racerecord.json')
 const photo = require('./photo.json')
 const album = require('./album.json')
 

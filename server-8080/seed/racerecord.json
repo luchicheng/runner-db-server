@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "time": "02:50:00",
+        "debut": "1",
+        "comment": "Runner #1, Race #2, time 2:50:00",
+        "createdAt": "2020-03-31T15:22:42.081Z",
+        "updatedAt": "2020-03-31T15:22:42.081Z",
+        "RunnerId": 1,
+        "RaceId": 2
+    },
+    {
+        "id": 2,
+        "time": "03:50:00",
+        "debut": "1",
+        "comment": "Runner #2, Race #1, time 4:50:00",
+        "createdAt": "2020-03-31T15:22:42.081Z",
+        "updatedAt": "2020-03-31T15:22:42.081Z",
+        "RunnerId": 1,
+        "RaceId": 1
+    },
+    {
+        "id": 3,
+        "time": "04:11:00",
+        "debut": "1",
+        "comment": "Runner #2, Race #1, time 4:50:00",
+        "createdAt": "2020-03-31T15:22:42.081Z",
+        "updatedAt": "2020-03-31T15:22:42.081Z",
+        "RunnerId": 2,
+        "RaceId": 2
+    },
+    {
+        "id": 4,
+        "time": "04:30:00",
+        "debut": "1",
+        "comment": "Runner #2, Race #1, time 4:50:00",
+        "createdAt": "2020-03-31T15:22:42.082Z",
+        "updatedAt": "2020-03-31T15:22:42.082Z",
+        "RunnerId": 2,
+        "RaceId": 3
+    },
+    {
+        "id": 5,
+        "time": "03:23:00",
+        "debut": "1",
+        "comment": "Runner #2, Race #1, time 4:50:00",
+        "createdAt": "2020-03-31T15:22:42.082Z",
+        "updatedAt": "2020-03-31T15:22:42.082Z",
+        "RunnerId": 4,
+        "RaceId": 4
+    },
+    {
+        "id": 6,
+        "time": "03:22:00",
+        "debut": "1",
+        "comment": "Runner #2, Race #1, time 4:50:00",
+        "createdAt": "2020-03-31T15:22:42.082Z",
+        "updatedAt": "2020-03-31T15:22:42.082Z",
+        "RunnerId": 3,
+        "RaceId": 4
+    },
+    {
+        "id": 7,
+        "time": "03:21:59",
+        "debut": "1",
+        "comment": "Runner #2, Race #1, time 4:50:00",
+        "createdAt": "2020-03-31T15:22:42.082Z",
+        "updatedAt": "2020-03-31T15:22:42.082Z",
+        "RunnerId": 6,
+        "RaceId": 4
+    },
+    {
+        "id": 8,
+        "time": "03:43:22",
+        "debut": "1",
+        "comment": "Runner #2, Race #1, time 4:50:00",
+        "createdAt": "2020-03-31T15:22:42.082Z",
+        "updatedAt": "2020-03-31T15:22:42.082Z",
+        "RunnerId": 7,
+        "RaceId": 4
+    }
+]
