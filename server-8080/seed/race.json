@@ -9,8 +9,8 @@
         "bq": "Y",
         "desc": "The Boston Marathon is an annual marathon race hosted by several cities in greater Boston in eastern Massachusetts, United States.",
         "comment": "UPDATE - 2020 BOSTON MARATHON POSTPONED",
-        "createdAt": "2020-03-31T15:22:42.050Z",
-        "updatedAt": "2020-03-31T15:22:42.050Z"
+        "createdAt": "2020-04-05T03:58:10.716Z",
+        "updatedAt": "2020-04-05T04:21:10.639Z"
     },
     {
         "id": 2,
@@ -22,21 +22,21 @@
         "bq": "Y",
         "desc": "The New York City Marathon (currently branded TCS New York City Marathon for sponsorship reasons)",
         "comment": "",
-        "createdAt": "2020-03-31T15:22:42.051Z",
-        "updatedAt": "2020-03-31T15:22:42.051Z"
+        "createdAt": "2020-04-05T03:58:10.717Z",
+        "updatedAt": "2020-04-05T04:21:10.639Z"
     },
     {
         "id": 3,
-        "name": "SWMT Marathon",
+        "name": "STWM Marathon",
         "year": "2020",
         "dor": "2020-10-21",
         "distance": "42.2K",
         "wmm": "N",
         "bq": "Y",
-        "desc": "water front",
+        "desc": "Toronto Waterfront Marathon",
         "comment": "",
-        "createdAt": "2020-03-31T15:22:42.052Z",
-        "updatedAt": "2020-03-31T15:22:42.052Z"
+        "createdAt": "2020-04-05T03:58:10.717Z",
+        "updatedAt": "2020-04-05T04:21:10.640Z"
     },
     {
         "id": 4,
@@ -48,8 +48,8 @@
         "bq": "Y",
         "desc": "toronto marathon",
         "comment": "",
-        "createdAt": "2020-03-31T15:22:42.052Z",
-        "updatedAt": "2020-03-31T15:22:42.052Z"
+        "createdAt": "2020-04-05T03:58:10.717Z",
+        "updatedAt": "2020-04-05T04:21:10.640Z"
     },
     {
         "id": 5,
@@ -61,7 +61,124 @@
         "bq": "N",
         "desc": "ATB 30K",
         "comment": "",
-        "createdAt": "2020-03-31T15:22:42.052Z",
-        "updatedAt": "2020-03-31T15:22:42.052Z"
+        "createdAt": "2020-04-05T03:58:10.718Z",
+        "updatedAt": "2020-04-05T04:21:10.640Z"
+    },
+    {
+        "id": 6,
+        "name": "Newyork Marathon",
+        "year": "2019",
+        "dor": "2019-11-03",
+        "distance": "42.2K",
+        "wmm": "Y",
+        "bq": "Y",
+        "desc": "The New York City Marathon (currently branded TCS New York City Marathon for sponsorship reasons)",
+        "comment": "",
+        "createdAt": "2020-04-05T03:58:10.718Z",
+        "updatedAt": "2020-04-05T04:21:10.640Z"
+    },
+    {
+        "id": 7,
+        "name": "Erie Marathon",
+        "year": "2019",
+        "dor": "2019-09-08",
+        "distance": "42.2K",
+        "wmm": "N",
+        "bq": "Y",
+        "desc": "Flat, Fast & Fun, our course provides beautiful views of Lake Erie as well as the City of Erie Bayfront and miles of coastline beaches",
+        "comment": "",
+        "createdAt": "2020-04-05T03:58:10.718Z",
+        "updatedAt": "2020-04-05T04:21:10.641Z"
+    },
+    {
+        "id": 8,
+        "name": "Boston Marathon",
+        "year": "2019",
+        "dor": "2019-04-22",
+        "distance": "42.2K",
+        "wmm": "Y",
+        "bq": "Y",
+        "desc": "The Boston Marathon is an annual marathon race hosted by several cities in greater Boston in eastern Massachusetts, United States.",
+        "comment": "",
+        "createdAt": "2020-04-05T03:58:10.718Z",
+        "updatedAt": "2020-04-05T04:21:10.641Z"
+    },
+    {
+        "id": 9,
+        "name": "Chicago Marathon",
+        "year": "2019",
+        "dor": "2019-10-13",
+        "distance": "42.2K",
+        "wmm": "Y",
+        "bq": "Y",
+        "desc": "The Chicago Marathon is a marathon held every October in Chicago, Illinois",
+        "comment": "",
+        "createdAt": "2020-04-05T03:58:10.719Z",
+        "updatedAt": "2020-04-05T04:21:10.641Z"
+    },
+    {
+        "id": 10,
+        "name": "STWM Marathon",
+        "year": "2019",
+        "dor": "2019-10-20",
+        "distance": "42.2K",
+        "wmm": "N",
+        "bq": "Y",
+        "desc": "Toronto Waterfront Marathon",
+        "comment": "",
+        "createdAt": "2020-04-05T03:58:10.719Z",
+        "updatedAt": "2020-04-05T04:21:10.641Z"
+    },
+    {
+        "id": 11,
+        "name": "Berlin Marathon",
+        "year": "2019",
+        "dor": "2019-09-29",
+        "distance": "42.2K",
+        "wmm": "Y",
+        "bq": "Y",
+        "desc": "Location: Berlin, Germany",
+        "comment": "",
+        "createdAt": "2020-04-05T03:58:10.719Z",
+        "updatedAt": "2020-04-05T04:21:10.642Z"
+    },
+    {
+        "id": 12,
+        "name": "TORONTO Marathon",
+        "year": "2019",
+        "dor": "2019-05-05",
+        "distance": "42.2K",
+        "wmm": "N",
+        "bq": "Y",
+        "desc": "start from Toronto North York",
+        "comment": "",
+        "createdAt": "2020-04-05T03:58:10.719Z",
+        "updatedAt": "2020-04-05T04:21:10.642Z"
+    },
+    {
+        "id": 13,
+        "name": "Hamilton Marathon Road2Hope",
+        "year": "2018",
+        "dor": "2018-11-03",
+        "distance": "42.2K",
+        "wmm": "N",
+        "bq": "Y",
+        "desc": "",
+        "comment": "",
+        "createdAt": "2020-04-05T03:58:10.719Z",
+        "updatedAt": "2020-04-05T04:21:10.642Z"
+    },
+    {
+        "id": 14,
+        "name": "One City Marathon",
+        "year": "2020",
+        "dor": "2020-03-01",
+        "distance": "42.2K",
+        "wmm": "N",
+        "bq": "Y",
+        "desc": "The Newport News One City Marathon",
+        "comment": "",
+        "createdAt": "2020-04-05T04:25:08.969Z",
+        "updatedAt": "2020-04-05T04:25:08.969Z"
     }
 ]

@@ -2,7 +2,7 @@
     {
         "id": 1,
         "email": "testing@gmail.com",
-        "password": "$2a$08$xXjk0R0j5j1GyCLEvJw2XuHDkMdm6uaSbjtXMU0QeESERdkZ8vsB2",
+        "password": "12345678",
         "createdAt": "2020-03-31T15:22:41.940Z",
         "updatedAt": "2020-03-31T15:22:41.940Z"
     }
