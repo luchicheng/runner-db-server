@@ -1,8 +1,28 @@
 [
     {
         "id": 1,
+        "email": "admin@gmail.com",
+        "password": "12345678",
+        "userType": 1,
+        "RunnerId": 1,
+        "createdAt": "2020-03-31T15:22:41.940Z",
+        "updatedAt": "2020-03-31T15:22:41.940Z"
+    },
+    {
+        "id": 2,
         "email": "testing@gmail.com",
         "password": "12345678",
+        "userType": 2,
+        "RunnerId": 1,
+        "createdAt": "2020-03-31T15:22:41.940Z",
+        "updatedAt": "2020-03-31T15:22:41.940Z"
+    },
+    {
+        "id": 3,
+        "email": "testing@hotmail.com",
+        "password": "87654321",
+        "userType": 2,
+        "RunnerId": 2,
         "createdAt": "2020-03-31T15:22:41.940Z",
         "updatedAt": "2020-03-31T15:22:41.940Z"
     }
