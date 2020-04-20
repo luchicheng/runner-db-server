@@ -22,7 +22,8 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       unique: true
     },
-    password: DataTypes.STRING
+    password: DataTypes.STRING,
+    userType: DataTypes.INTEGER
   }, {
     hooks: {
       beforeCreate: hashPassword,
@@ -36,6 +37,7 @@ module.exports = (sequelize, DataTypes) => {
   }
 
   User.associate = function (models) {
+    User.belongsTo(models.Runner)
   }
 
   return User
