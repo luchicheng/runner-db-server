@@ -34,6 +34,7 @@ module.exports = {
           ]
         })
       }
+      // console.log(runners[0]['Race']['dataValues'])
       res.send(runners)
     } catch (err) {
       console.log(err)

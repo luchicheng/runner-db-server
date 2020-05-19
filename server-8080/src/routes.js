@@ -4,6 +4,7 @@ const SongsController = require('./controllers/SongsController')
 const BookmarksController = require('./controllers/BookmarksController')
 const HistoriesController = require('./controllers/HistoriesController')
 const RunnersController = require('./controllers/RunnersController')
+const UsersController = require('./controllers/UsersController')
 const RacesController = require('./controllers/RacesController')
 const TrainingRecordsController = require('./controllers/TrainingRecordsController')
 const RaceRecordsController = require('./controllers/RaceRecordsController')
@@ -64,6 +65,25 @@ module.exports = (app) => {
   app.delete('/backapi/runners/:runnerId',
     isAuthenticated,
     RunnersController.del)
+
+  app.get('/backapi/users',
+    isAuthenticated,
+    UsersController.index)
+  app.get('/backapi/users/:userId',
+    isAuthenticated,
+    UsersController.show)
+  app.get('/backapi/users/extradata/:userId',
+    isAuthenticated,
+    UsersController.showExtraData)
+  app.put('/backapi/users/:userId',
+    isAuthenticated,
+    UsersController.put)
+  app.post('/backapi/users',
+    isAuthenticated,
+    UsersController.post)
+  app.delete('/backapi/users/:userId',
+    isAuthenticated,
+    UsersController.del)
 
   app.get('/backapi/races',
     isAuthenticated,
