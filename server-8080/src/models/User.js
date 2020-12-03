@@ -23,7 +23,12 @@ module.exports = (sequelize, DataTypes) => {
       unique: true
     },
     password: DataTypes.STRING,
-    userType: DataTypes.INTEGER
+    // userType: A:Admin; C:Coach; R:Runner
+    userType: DataTypes.STRING(1),
+    membershipExprireDate: DataTypes.DATEONLY,
+    // status: A: active; I: Inactive
+    status: DataTypes.STRING(1),
+    comment: DataTypes.STRING
   }, {
     hooks: {
       beforeCreate: hashPassword,

@@ -5,7 +5,7 @@
         "debut": null,
         "comment": null,
         "createdAt": "2020-04-05T03:54:18.143Z",
-        "updatedAt": "2020-04-05T04:21:10.940Z",
+        "updatedAt": "2020-04-05T05:08:05.006Z",
         "RunnerId": 1,
         "RaceId": 13
     },
@@ -15,7 +15,7 @@
         "debut": null,
         "comment": null,
         "createdAt": "2020-04-05T03:58:45.486Z",
-        "updatedAt": "2020-04-05T04:21:10.940Z",
+        "updatedAt": "2020-04-05T05:08:05.007Z",
         "RunnerId": 100,
         "RaceId": 6
     },
@@ -25,7 +25,7 @@
         "debut": null,
         "comment": null,
         "createdAt": "2020-04-05T03:59:16.361Z",
-        "updatedAt": "2020-04-05T04:21:10.941Z",
+        "updatedAt": "2020-04-05T05:08:05.013Z",
         "RunnerId": 14,
         "RaceId": 6
     },
@@ -35,7 +35,7 @@
         "debut": null,
         "comment": null,
         "createdAt": "2020-04-05T03:59:56.570Z",
-        "updatedAt": "2020-04-05T04:21:10.941Z",
+        "updatedAt": "2020-04-05T05:08:05.013Z",
         "RunnerId": 79,
         "RaceId": 7
     },
@@ -45,7 +45,7 @@
         "debut": null,
         "comment": null,
         "createdAt": "2020-04-05T04:01:40.465Z",
-        "updatedAt": "2020-04-05T04:21:10.941Z",
+        "updatedAt": "2020-04-05T05:08:05.014Z",
         "RunnerId": 172,
         "RaceId": 8
     },
@@ -55,7 +55,7 @@
         "debut": null,
         "comment": null,
         "createdAt": "2020-04-05T04:02:11.080Z",
-        "updatedAt": "2020-04-05T04:21:10.941Z",
+        "updatedAt": "2020-04-05T05:08:05.014Z",
         "RunnerId": 68,
         "RaceId": 9
     },
@@ -65,7 +65,7 @@
         "debut": null,
         "comment": null,
         "createdAt": "2020-04-05T04:03:00.459Z",
-        "updatedAt": "2020-04-05T04:21:10.941Z",
+        "updatedAt": "2020-04-05T05:08:05.014Z",
         "RunnerId": 76,
         "RaceId": 9
     },
@@ -75,7 +75,7 @@
         "debut": null,
         "comment": null,
         "createdAt": "2020-04-05T04:03:53.224Z",
-        "updatedAt": "2020-04-05T04:21:10.941Z",
+        "updatedAt": "2020-04-05T05:08:05.014Z",
         "RunnerId": 50,
         "RaceId": 7
     },
@@ -85,7 +85,7 @@
         "debut": null,
         "comment": null,
         "createdAt": "2020-04-05T04:04:23.316Z",
-        "updatedAt": "2020-04-05T04:21:10.941Z",
+        "updatedAt": "2020-04-05T05:08:05.014Z",
         "RunnerId": 71,
         "RaceId": 9
     },
@@ -95,7 +95,7 @@
         "debut": null,
         "comment": null,
         "createdAt": "2020-04-05T04:05:16.792Z",
-        "updatedAt": "2020-04-05T04:21:10.942Z",
+        "updatedAt": "2020-04-05T05:08:05.015Z",
         "RunnerId": 60,
         "RaceId": 10
     },
@@ -105,7 +105,7 @@
         "debut": null,
         "comment": null,
         "createdAt": "2020-04-05T04:05:50.576Z",
-        "updatedAt": "2020-04-05T04:21:10.942Z",
+        "updatedAt": "2020-04-05T05:08:05.015Z",
         "RunnerId": 6,
         "RaceId": 11
     },
@@ -115,7 +115,7 @@
         "debut": null,
         "comment": null,
         "createdAt": "2020-04-05T04:07:03.296Z",
-        "updatedAt": "2020-04-05T04:21:10.942Z",
+        "updatedAt": "2020-04-05T05:08:05.015Z",
         "RunnerId": 21,
         "RaceId": 9
     },
@@ -125,7 +125,7 @@
         "debut": null,
         "comment": null,
         "createdAt": "2020-04-05T04:07:39.313Z",
-        "updatedAt": "2020-04-05T04:21:10.942Z",
+        "updatedAt": "2020-04-05T05:08:05.015Z",
         "RunnerId": 47,
         "RaceId": 7
     },
@@ -135,7 +135,7 @@
         "debut": null,
         "comment": null,
         "createdAt": "2020-04-05T04:08:18.335Z",
-        "updatedAt": "2020-04-05T04:21:10.942Z",
+        "updatedAt": "2020-04-05T05:08:05.015Z",
         "RunnerId": 18,
         "RaceId": 12
     },
@@ -145,7 +145,7 @@
         "debut": null,
         "comment": null,
         "createdAt": "2020-04-05T04:08:57.063Z",
-        "updatedAt": "2020-04-05T04:21:10.942Z",
+        "updatedAt": "2020-04-05T05:08:05.016Z",
         "RunnerId": 2,
         "RaceId": 11
     },
@@ -155,7 +155,7 @@
         "debut": null,
         "comment": null,
         "createdAt": "2020-04-05T04:09:42.118Z",
-        "updatedAt": "2020-04-05T04:21:10.942Z",
+        "updatedAt": "2020-04-05T05:08:05.016Z",
         "RunnerId": 27,
         "RaceId": 7
     },
@@ -165,7 +165,7 @@
         "debut": null,
         "comment": null,
         "createdAt": "2020-04-05T04:10:07.734Z",
-        "updatedAt": "2020-04-05T04:21:10.942Z",
+        "updatedAt": "2020-04-05T05:08:05.016Z",
         "RunnerId": 9,
         "RaceId": 7
     },
@@ -175,7 +175,7 @@
         "debut": null,
         "comment": null,
         "createdAt": "2020-04-05T04:10:33.677Z",
-        "updatedAt": "2020-04-05T04:21:10.942Z",
+        "updatedAt": "2020-04-05T05:08:05.016Z",
         "RunnerId": 3,
         "RaceId": 8
     },
@@ -185,7 +185,7 @@
         "debut": null,
         "comment": null,
         "createdAt": "2020-04-05T04:11:07.174Z",
-        "updatedAt": "2020-04-05T04:21:10.942Z",
+        "updatedAt": "2020-04-05T05:08:05.016Z",
         "RunnerId": 62,
         "RaceId": 7
     },
@@ -195,7 +195,7 @@
         "debut": null,
         "comment": null,
         "createdAt": "2020-04-05T04:11:29.301Z",
-        "updatedAt": "2020-04-05T04:21:10.942Z",
+        "updatedAt": "2020-04-05T05:08:05.016Z",
         "RunnerId": 10,
         "RaceId": 7
     },
@@ -205,7 +205,7 @@
         "debut": null,
         "comment": null,
         "createdAt": "2020-04-05T04:11:54.167Z",
-        "updatedAt": "2020-04-05T04:21:10.942Z",
+        "updatedAt": "2020-04-05T05:08:05.017Z",
         "RunnerId": 51,
         "RaceId": 7
     },
@@ -215,8 +215,108 @@
         "debut": null,
         "comment": null,
         "createdAt": "2020-04-05T04:27:12.260Z",
-        "updatedAt": "2020-04-05T04:27:12.260Z",
+        "updatedAt": "2020-04-05T05:08:05.017Z",
         "RunnerId": 79,
         "RaceId": 14
+    },
+    {
+        "id": 23,
+        "time": "03:48:36",
+        "debut": null,
+        "comment": null,
+        "createdAt": "2020-11-08T21:16:30.504Z",
+        "updatedAt": "2020-11-08T21:16:30.504Z",
+        "RunnerId": 10,
+        "RaceId": 15
+    },
+    {
+        "id": 24,
+        "time": "03:40:56",
+        "debut": null,
+        "comment": null,
+        "createdAt": "2020-11-08T21:17:26.031Z",
+        "updatedAt": "2020-11-08T21:17:26.031Z",
+        "RunnerId": 9,
+        "RaceId": 15
+    },
+    {
+        "id": 25,
+        "time": "03:39:57",
+        "debut": null,
+        "comment": null,
+        "createdAt": "2020-11-08T21:18:03.691Z",
+        "updatedAt": "2020-11-08T21:18:03.691Z",
+        "RunnerId": 82,
+        "RaceId": 15
+    },
+    {
+        "id": 26,
+        "time": "03:09:33",
+        "debut": null,
+        "comment": null,
+        "createdAt": "2020-11-08T21:19:13.213Z",
+        "updatedAt": "2020-11-08T21:19:13.213Z",
+        "RunnerId": 149,
+        "RaceId": 15
+    },
+    {
+        "id": 27,
+        "time": "03:08:10",
+        "debut": null,
+        "comment": null,
+        "createdAt": "2020-11-08T21:20:15.322Z",
+        "updatedAt": "2020-11-08T21:20:15.322Z",
+        "RunnerId": 29,
+        "RaceId": 15
+    },
+    {
+        "id": 28,
+        "time": "03:06:17",
+        "debut": null,
+        "comment": null,
+        "createdAt": "2020-11-08T21:20:55.504Z",
+        "updatedAt": "2020-11-08T21:20:55.504Z",
+        "RunnerId": 147,
+        "RaceId": 15
+    },
+    {
+        "id": 29,
+        "time": "02:58:44",
+        "debut": null,
+        "comment": null,
+        "createdAt": "2020-11-08T21:21:48.850Z",
+        "updatedAt": "2020-11-08T21:21:48.850Z",
+        "RunnerId": 50,
+        "RaceId": 15
+    },
+    {
+        "id": 30,
+        "time": "03:46:18",
+        "debut": null,
+        "comment": null,
+        "createdAt": "2020-11-09T16:18:27.282Z",
+        "updatedAt": "2020-11-09T16:18:27.282Z",
+        "RunnerId": 75,
+        "RaceId": 16
+    },
+    {
+        "id": 31,
+        "time": "03:42:26",
+        "debut": null,
+        "comment": null,
+        "createdAt": "2020-11-09T16:26:26.066Z",
+        "updatedAt": "2020-11-09T16:26:26.066Z",
+        "RunnerId": 85,
+        "RaceId": 17
+    },
+    {
+        "id": 32,
+        "time": "03:04:26",
+        "debut": null,
+        "comment": null,
+        "createdAt": "2020-11-11T15:16:45.200Z",
+        "updatedAt": "2020-11-11T15:16:45.200Z",
+        "RunnerId": 173,
+        "RaceId": 15
     }
 ]

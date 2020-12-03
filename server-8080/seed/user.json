@@ -1,28 +1,60 @@
 [
     {
-        "id": 1,
+		"id": 1,
         "email": "admin@gmail.com",
         "password": "12345678",
-        "userType": 1,
-        "RunnerId": 1,
+        "userType": "A",
+		"membershipExprireDate": "2099-01-01",
+		"status": "A",
+		"comment": "Admin",
         "createdAt": "2020-03-31T15:22:41.940Z",
         "updatedAt": "2020-03-31T15:22:41.940Z"
     },
-    {
-        "id": 2,
-        "email": "testing@gmail.com",
+	{
+		"id": 2,
+        "email": "coach@gmail.com",
         "password": "12345678",
-        "userType": 2,
-        "RunnerId": 1,
+        "userType": "C",
+		"membershipExprireDate": "2099-01-01",
+		"status": "A",
+		"comment": "enabled coach",
+		"RunnerId": "2",
         "createdAt": "2020-03-31T15:22:41.940Z",
         "updatedAt": "2020-03-31T15:22:41.940Z"
     },
-    {
-        "id": 3,
-        "email": "testing@hotmail.com",
-        "password": "87654321",
-        "userType": 2,
-        "RunnerId": 2,
+	{
+		"id": 3,
+        "email": "runner1@gmail.com",
+        "password": "12345678",
+        "userType": "R",
+		"membershipExprireDate": "2099-01-01",
+		"RunnerId": "3",
+		"status": "A",
+		"comment": "normal runner",
+        "createdAt": "2020-03-31T15:22:41.940Z",
+        "updatedAt": "2020-03-31T15:22:41.940Z"
+    },
+	{
+		"id": 4,
+        "email": "runner2@gmail.com",
+        "password": "12345678",
+        "userType": "R",
+		"membershipExprireDate": "2099-01-01",
+		"RunnerId": "4",
+		"status": "I",
+		"comment": "inactived runner",
+        "createdAt": "2020-03-31T15:22:41.940Z",
+        "updatedAt": "2020-03-31T15:22:41.940Z"
+    },
+	{
+		"id": 5,
+        "email": "runner3@gmail.com",
+        "password": "12345678",
+        "userType": "R",
+		"membershipExprireDate": "2020-01-01",
+		"RunnerId": "5",
+		"status": "A",
+		"comment": "membership expired runner",
         "createdAt": "2020-03-31T15:22:41.940Z",
         "updatedAt": "2020-03-31T15:22:41.940Z"
     }
