@@ -39,13 +39,29 @@ module.exports = {
       })
       if (!user) {
         return res.status(403).send({
-          error: 'The login information was incorrect'
+          error: 'The login information was incorrect: Error 011'
+        })
+      }
+      if (user.status === 'I') {
+        return res.status(403).send({
+          error: 'The login information was incorrect: Error 013'
+        })
+      }
+      const now = new Date()
+      const expireDate = new Date(user.membershipExprireDate)
+      console.log('expireDate from DB:' + user.membershipExprireDate)
+      console.log('now:' + now)
+      console.log('expireDate' + expireDate)
+      // add 5 hour (Eastern Time) + 24 hours
+      if (!user.membershipExprireDate || (expireDate.getTime() + 29 * 60 * 60 * 1000) < now.getTime()) {
+        return res.status(403).send({
+          error: 'The login information was incorrect: Error 014'
         })
       }
       const isPasswordValid = await user.comparePassword(password)
       if (!isPasswordValid) {
         return res.status(403).send({
-          error: 'The login information was incorrect'
+          error: 'The login information was incorrect: Error 012'
         })
       }
       if (user.Runner && user.Runner.name) {

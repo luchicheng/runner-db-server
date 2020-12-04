@@ -56,6 +56,7 @@ module.exports = {
           }
         })
       } else {
+        req.body.password = '12345678'
         const user = await User.create(req.body)
         res.send(user)
       }
