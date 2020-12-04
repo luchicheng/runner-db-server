@@ -10,6 +10,7 @@ const RaceRecordsController = require('./controllers/RaceRecordsController')
 const DataQueryController = require('./controllers/DataQueryController')
 const PhotosController = require('./controllers/PhotosController')
 const AlbumsController = require('./controllers/AlbumsController')
+const UsersController = require('./controllers/UsersController')
 
 const isAuthenticated = require('./policies/isAuthenticated')
 
@@ -35,7 +36,7 @@ module.exports = (app) => {
   app.post('/backapi/bookmarks',
     isAuthenticated,
     BookmarksController.post)
-  app.delete('/backapi/backapi/bookmarks/:bookmarkId',
+  app.delete('/backapi/bookmarks/:bookmarkId',
     isAuthenticated,
     BookmarksController.remove)
 
@@ -77,7 +78,7 @@ module.exports = (app) => {
   app.get('/backapi/validRaces',
     isAuthenticated,
     RacesController.all_valid)
-  app.delete('/races/:raceId',
+  app.delete('/backapi/races/:raceId',
     isAuthenticated,
     RacesController.del)
   app.post('/backapi/trainingrecords',
@@ -132,4 +133,13 @@ module.exports = (app) => {
   app.get('/backapi/albums/:albumId/photos',
     // isAuthenticated,
     AlbumsController.indexPhotos)
+  app.get('/backapi/users',
+    // isAuthenticated,
+    UsersController.index)
+  app.post('/backapi/users',
+    // isAuthenticated,
+    UsersController.post)
+  app.delete('/backapi/users/:userId',
+    // isAuthenticated,
+    UsersController.del)
 }

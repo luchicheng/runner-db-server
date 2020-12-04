@@ -76,6 +76,7 @@ module.exports = {
         res.send(race)
       }
     } catch (err) {
+      console.log(err)
       res.status(500).send({
         error: 'an error has occured trying to create/update the race'
       })
@@ -93,6 +94,7 @@ module.exports = {
       }
       res.send(race)
     } catch (err) {
+      console.log(err)
       res.status(500).send({
         error: 'an error has occured trying to show the races'
       })
