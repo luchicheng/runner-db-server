@@ -7,7 +7,7 @@
         "currentPerf": "true",
         "comment": "Runner #1, 10K tuneup, used 50 mins",
         "createdAt": "2020-03-31T15:22:42.068Z",
-        "updatedAt": "2020-04-05T05:08:04.975Z",
+        "updatedAt": "2020-12-03T15:53:00.015Z",
         "RunnerId": 1
     },
     {
@@ -18,7 +18,7 @@
         "currentPerf": "true",
         "comment": "Runner #2, 30K LR, used 2:30:00",
         "createdAt": "2020-03-31T15:22:42.069Z",
-        "updatedAt": "2020-04-05T05:08:04.976Z",
+        "updatedAt": "2020-12-03T15:53:00.015Z",
         "RunnerId": 1
     },
     {
@@ -29,7 +29,7 @@
         "currentPerf": "true",
         "comment": "Runner #1, 10K tuneup, used 50 mins",
         "createdAt": "2020-03-31T15:22:42.069Z",
-        "updatedAt": "2020-04-05T05:08:04.976Z",
+        "updatedAt": "2020-12-03T15:53:00.015Z",
         "RunnerId": 1
     },
     {
@@ -40,7 +40,7 @@
         "currentPerf": "true",
         "comment": "Runner #1, 10K tuneup, used 50 mins",
         "createdAt": "2020-03-31T15:22:42.069Z",
-        "updatedAt": "2020-04-05T05:08:04.976Z",
+        "updatedAt": "2020-12-03T15:53:00.016Z",
         "RunnerId": 1
     },
     {
@@ -51,7 +51,7 @@
         "currentPerf": "true",
         "comment": "Runner #1, 10K tuneup, used 50 mins",
         "createdAt": "2020-03-31T15:22:42.069Z",
-        "updatedAt": "2020-04-05T05:08:04.977Z",
+        "updatedAt": "2020-12-03T15:53:00.016Z",
         "RunnerId": 1
     },
     {
@@ -62,7 +62,7 @@
         "currentPerf": "true",
         "comment": "Runner #1, 10K tuneup, used 50 mins",
         "createdAt": "2020-03-31T15:22:42.069Z",
-        "updatedAt": "2020-04-05T05:08:04.977Z",
+        "updatedAt": "2020-12-03T15:53:00.016Z",
         "RunnerId": 2
     },
     {
@@ -73,7 +73,7 @@
         "currentPerf": "true",
         "comment": "Runner #2, 30K LR, used 2:30:00",
         "createdAt": "2020-03-31T15:22:42.070Z",
-        "updatedAt": "2020-04-05T05:08:04.978Z",
+        "updatedAt": "2020-12-03T15:53:00.017Z",
         "RunnerId": 2
     },
     {
@@ -84,7 +84,7 @@
         "currentPerf": "true",
         "comment": "Runner #1, 10K tuneup, used 50 mins",
         "createdAt": "2020-03-31T15:22:42.070Z",
-        "updatedAt": "2020-04-05T05:08:04.978Z",
+        "updatedAt": "2020-12-03T15:53:00.017Z",
         "RunnerId": 2
     },
     {
@@ -95,7 +95,7 @@
         "currentPerf": "true",
         "comment": "Runner #1, 10K tuneup, used 50 mins",
         "createdAt": "2020-03-31T15:22:42.070Z",
-        "updatedAt": "2020-04-05T05:08:04.978Z",
+        "updatedAt": "2020-12-03T15:53:00.021Z",
         "RunnerId": 2
     },
     {
@@ -106,7 +106,7 @@
         "currentPerf": "true",
         "comment": "Runner #1, 10K tuneup, used 50 mins",
         "createdAt": "2020-03-31T15:22:42.070Z",
-        "updatedAt": "2020-04-05T05:08:04.982Z",
+        "updatedAt": "2020-12-03T15:53:00.021Z",
         "RunnerId": 2
     }
 ]

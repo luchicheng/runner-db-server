@@ -6,34 +6,33 @@ module.exports = {
     try {
       let runners = null
       const search = req.query.search
+      const runnerFilter = req.query.runnerFilter
 
-      if (search) {
-        runners = await Runner.findAll({
-          where: {
-            $or: [
-              'name', 'nickName', 'phone', 'ePhone', 'comment'
-            ].map(key => ({
-              [key]: {
-                $like: `%${search}%`
-              }
-            }))
-          },
-          include: [
-            {
-              model: Race
-            }
-          ]
-        })
-      } else {
-        runners = await Runner.findAll({
-          limit: 100,
-          include: [
-            {
-              model: Race
-            }
-          ]
-        })
+      var whereStatement = {}
+
+      if (runnerFilter !== 'ALL') {
+        whereStatement.id = runnerFilter
       }
+      if (search) {
+        whereStatement.$or = [
+          'name', 'nickName', 'phone', 'ePhone', 'comment'
+        ].map(key => ({
+          [key]: {
+            $like: `%${search}%`
+          }
+        }))
+      }
+
+      runners = await Runner.findAll({
+        where: whereStatement,
+        limit: 100,
+        include: [
+          {
+            model: Race
+          }
+        ]
+      })
+      // }
       res.send(runners)
     } catch (err) {
       console.log(err)

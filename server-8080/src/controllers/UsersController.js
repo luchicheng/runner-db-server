@@ -56,11 +56,23 @@ module.exports = {
           }
         })
       } else {
+        const exstingUser = await User.findOne({
+          where: {
+            email: req.body.email
+          }
+        })
+        if (exstingUser) {
+          res.status(500).send({
+            error: 'this ID is existed, new member creation failed.'
+          })
+          return
+        }
         req.body.password = '12345678'
         const user = await User.create(req.body)
         res.send(user)
       }
     } catch (err) {
+      console.log(err)
       res.status(500).send({
         error: 'an error has occured trying to create/update the user'
       })

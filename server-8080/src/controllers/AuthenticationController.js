@@ -49,9 +49,6 @@ module.exports = {
       }
       const now = new Date()
       const expireDate = new Date(user.membershipExprireDate)
-      console.log('expireDate from DB:' + user.membershipExprireDate)
-      console.log('now:' + now)
-      console.log('expireDate' + expireDate)
       // add 5 hour (Eastern Time) + 24 hours
       if (!user.membershipExprireDate || (expireDate.getTime() + 29 * 60 * 60 * 1000) < now.getTime()) {
         return res.status(403).send({
@@ -67,8 +64,6 @@ module.exports = {
       if (user.Runner && user.Runner.name) {
         user.dataValues.name = user.Runner.name
         user.dataValues.Runner = null
-      } else {
-        user.dataValues.name = '91Runner'
       }
       const userJson = user.toJSON()
       res.send({
