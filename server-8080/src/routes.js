@@ -20,6 +20,9 @@ module.exports = (app) => {
     AuthenticationController.register)
   app.post('/backapi/login',
     AuthenticationController.login)
+  app.post('/backapi/passwordReset',
+    isAuthenticated,
+    AuthenticationController.passwordReset)
 
   app.get('/backapi/songs',
     SongsController.index)

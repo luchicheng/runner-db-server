@@ -24,6 +24,34 @@ module.exports = {
       })
     }
   },
+  async passwordReset (req, res) {
+    try {
+      const userId = req.body.userId
+      const password = req.body.password
+      const user = await User.findOne({
+        where: {
+          id: userId
+        }
+      })
+      if (!user) {
+        return res.status(500).send({
+          error: 'This user does not exist:' + userId
+        })
+      }
+      if (userId) {
+        await User.update({password: password}, {
+          where: {
+            id: userId
+          },
+          individualHooks: true
+        })
+      }
+    } catch (err) {
+      res.status(500).send({
+        error: 'an error has occured trying to reset user password'
+      })
+    }
+  },
   async login (req, res) {
     try {
       const {email, password} = req.body

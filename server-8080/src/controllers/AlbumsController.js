@@ -15,13 +15,21 @@ module.exports = {
                 $like: `%${search}%`
               }
             }))
-          }
+          },
+          order: [
+            ['name', 'DESC'],
+            ['updatedAt', 'DESC']
+          ]
         })
           .map(el => el.get({ plain: true })) // add this line to code
         // TODO const sequelize = new Sequelize('connectionUri', { define: { raw: true } });
       } else {
         albums = await Album.findAll({
-          limit: 50
+          limit: 500,
+          order: [
+            ['name', 'DESC'],
+            ['updatedAt', 'DESC']
+          ]
         })
           .map(el => el.get({ plain: true })) // add this line to code
       }

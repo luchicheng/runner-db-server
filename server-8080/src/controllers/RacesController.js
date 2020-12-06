@@ -21,7 +21,7 @@ module.exports = {
           // TODO const sequelize = new Sequelize('connectionUri', { define: { raw: true } });
       } else {
         races = await Race.findAll({
-          limit: 50
+          limit: 500
         })
           .map(el => el.get({ plain: true })) // add this line to code
       }

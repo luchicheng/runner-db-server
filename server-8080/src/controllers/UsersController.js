@@ -29,7 +29,7 @@ module.exports = {
       } else {
         users = await User.findAll({
           attributes: { exclude: ['password'] },
-          limit: 50,
+          limit: 500,
           include: [
             {
               model: Runner

@@ -25,7 +25,7 @@ module.exports = {
 
       runners = await Runner.findAll({
         where: whereStatement,
-        limit: 100,
+        limit: 500,
         include: [
           {
             model: Race
