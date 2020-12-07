@@ -78,9 +78,7 @@ module.exports = {
     }
   },
   async del (req, res) {
-    console.log('user id.....', req.params)
     try {
-      console.log('user id.....', req.params)
       const user = await User.findById(req.params.userId)
       if (user) {
         await User.destroy({
