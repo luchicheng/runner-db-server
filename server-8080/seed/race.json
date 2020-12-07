@@ -10,7 +10,7 @@
         "desc": "The Boston Marathon is an annual marathon race hosted by several cities in greater Boston in eastern Massachusetts, United States.",
         "comment": "UPDATE - 2020 BOSTON MARATHON POSTPONED",
         "createdAt": "2020-04-05T03:58:10.716Z",
-        "updatedAt": "2020-12-03T15:52:58.733Z"
+        "updatedAt": "2020-12-05T00:58:37.361Z"
     },
     {
         "id": 2,
@@ -23,7 +23,7 @@
         "desc": "The New York City Marathon (currently branded TCS New York City Marathon for sponsorship reasons)",
         "comment": "",
         "createdAt": "2020-04-05T03:58:10.717Z",
-        "updatedAt": "2020-12-03T15:52:58.734Z"
+        "updatedAt": "2020-12-05T00:58:37.362Z"
     },
     {
         "id": 3,
@@ -36,7 +36,7 @@
         "desc": "Toronto Waterfront Marathon",
         "comment": "",
         "createdAt": "2020-04-05T03:58:10.717Z",
-        "updatedAt": "2020-12-03T15:52:58.735Z"
+        "updatedAt": "2020-12-05T00:58:37.363Z"
     },
     {
         "id": 4,
@@ -49,7 +49,7 @@
         "desc": "toronto marathon",
         "comment": "",
         "createdAt": "2020-04-05T03:58:10.717Z",
-        "updatedAt": "2020-12-03T15:52:58.736Z"
+        "updatedAt": "2020-12-05T00:58:37.364Z"
     },
     {
         "id": 5,
@@ -62,7 +62,7 @@
         "desc": "ATB 30K",
         "comment": "",
         "createdAt": "2020-04-05T03:58:10.718Z",
-        "updatedAt": "2020-12-03T15:52:58.737Z"
+        "updatedAt": "2020-12-05T00:58:37.365Z"
     },
     {
         "id": 6,
@@ -75,11 +75,11 @@
         "desc": "The New York City Marathon (currently branded TCS New York City Marathon for sponsorship reasons)",
         "comment": "",
         "createdAt": "2020-04-05T03:58:10.718Z",
-        "updatedAt": "2020-12-03T15:52:58.738Z"
+        "updatedAt": "2020-12-05T00:58:37.366Z"
     },
     {
         "id": 7,
-        "name": "Erie Marathon",
+        "name": "2019 Erie Marathon",
         "year": "2019",
         "dor": "2019-09-08",
         "distance": "42.2K",
@@ -88,7 +88,7 @@
         "desc": "Flat, Fast & Fun, our course provides beautiful views of Lake Erie as well as the City of Erie Bayfront and miles of coastline beaches",
         "comment": "",
         "createdAt": "2020-04-05T03:58:10.718Z",
-        "updatedAt": "2020-12-03T15:52:58.739Z"
+        "updatedAt": "2020-12-05T23:23:13.479Z"
     },
     {
         "id": 8,
@@ -101,7 +101,7 @@
         "desc": "The Boston Marathon is an annual marathon race hosted by several cities in greater Boston in eastern Massachusetts, United States.",
         "comment": "",
         "createdAt": "2020-04-05T03:58:10.718Z",
-        "updatedAt": "2020-12-03T15:52:58.740Z"
+        "updatedAt": "2020-12-05T00:58:37.367Z"
     },
     {
         "id": 9,
@@ -114,7 +114,7 @@
         "desc": "The Chicago Marathon is a marathon held every October in Chicago, Illinois",
         "comment": "",
         "createdAt": "2020-04-05T03:58:10.719Z",
-        "updatedAt": "2020-12-03T15:52:58.740Z"
+        "updatedAt": "2020-12-05T00:58:37.368Z"
     },
     {
         "id": 10,
@@ -127,7 +127,7 @@
         "desc": "Toronto Waterfront Marathon",
         "comment": "",
         "createdAt": "2020-04-05T03:58:10.719Z",
-        "updatedAt": "2020-12-03T15:52:58.741Z"
+        "updatedAt": "2020-12-05T00:58:37.369Z"
     },
     {
         "id": 11,
@@ -140,7 +140,7 @@
         "desc": "Location: Berlin, Germany",
         "comment": "",
         "createdAt": "2020-04-05T03:58:10.719Z",
-        "updatedAt": "2020-12-03T15:52:58.742Z"
+        "updatedAt": "2020-12-05T00:58:37.370Z"
     },
     {
         "id": 12,
@@ -153,7 +153,7 @@
         "desc": "start from Toronto North York",
         "comment": "",
         "createdAt": "2020-04-05T03:58:10.719Z",
-        "updatedAt": "2020-12-03T15:52:58.743Z"
+        "updatedAt": "2020-12-05T00:58:37.370Z"
     },
     {
         "id": 13,
@@ -166,7 +166,7 @@
         "desc": "",
         "comment": "",
         "createdAt": "2020-04-05T03:58:10.719Z",
-        "updatedAt": "2020-12-03T15:52:58.744Z"
+        "updatedAt": "2020-12-05T00:58:37.371Z"
     },
     {
         "id": 14,
@@ -179,7 +179,7 @@
         "desc": "The Newport News One City Marathon",
         "comment": "",
         "createdAt": "2020-04-05T04:25:08.969Z",
-        "updatedAt": "2020-12-03T15:52:58.744Z"
+        "updatedAt": "2020-12-05T00:58:37.372Z"
     },
     {
         "id": 15,
@@ -192,7 +192,7 @@
         "desc": "加拿大安大略省伦敦市的That Dam Hill马拉松",
         "comment": "",
         "createdAt": "2020-11-08T21:14:03.982Z",
-        "updatedAt": "2020-12-03T15:52:58.745Z"
+        "updatedAt": "2020-12-05T00:58:37.372Z"
     },
     {
         "id": 16,
@@ -205,7 +205,7 @@
         "desc": "Flat, Fast & Fun, our course provides beautiful views of Lake Erie as well as the City of Erie Bayfront and miles of coastline beaches",
         "comment": "",
         "createdAt": "2020-11-09T16:16:46.310Z",
-        "updatedAt": "2020-12-03T15:52:58.746Z"
+        "updatedAt": "2020-12-05T00:58:37.373Z"
     },
     {
         "id": 17,
@@ -218,6 +218,6 @@
         "desc": " Marathon P'tit Train du nord（魁北克小火车马拉松）",
         "comment": "",
         "createdAt": "2020-11-09T16:25:38.240Z",
-        "updatedAt": "2020-12-03T15:52:58.746Z"
+        "updatedAt": "2020-12-05T00:58:37.374Z"
     }
 ]
