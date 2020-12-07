@@ -2,7 +2,7 @@ const {
   sequelize,
   Song,
   Runner,
-  User,
+  // User,
   Bookmark,
   History,
   Race,
@@ -12,11 +12,21 @@ const {
   Photo
 } = require('../src/models')
 
+let {
+  User
+} = require('../src/models')
+// User.removeHook('beforeCreate', 'hashPassword')
+// User.removeHook('beforeSave', 'hashPassword')
+User.options.hooks = {}
+console.log('**********************in seed index*************************************')
+console.log(User)
+console.log('**********************in seed index*************************************')
+
 const Promise = require('bluebird')
 const songs = require('./songs.json')
 const runners = require('./runner.json')
 // uncomment it only for Dev environment.
-// const users = require('./user.json')
+const users = require('./user.json')
 const bookmarks = require('./bookmarks.json')
 const histories = require('./histories.json')
 const races = require('./race.json')
@@ -46,11 +56,11 @@ sequelize.sync({ force: true })
       })
     )
 
-    // await Promise.all(
-    //   users.map(user => {
-    //     User.create(user)
-    //   })
-    // )
+    await Promise.all(
+      users.map(user => { 
+        User.create(user)
+      })
+    )
 
     await Promise.all(
       histories.map(history => {
