@@ -47,7 +47,7 @@ module.exports = {
         })
       }
     } catch (err) {
-      res.status(500).send({
+      return res.status(500).send({
         error: 'an error has occured trying to reset user password'
       })
     }
@@ -99,7 +99,7 @@ module.exports = {
         token: jwtSignUser(userJson)
       })
     } catch (err) {
-      res.status(500).send({
+      return res.status(500).send({
         error: 'An error has occured trying to log in'
       })
     }

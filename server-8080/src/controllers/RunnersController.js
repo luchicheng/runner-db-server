@@ -36,7 +36,7 @@ module.exports = {
       res.send(runners)
     } catch (err) {
       console.log(err)
-      res.status(500).send({
+      return res.status(500).send({
         error: 'an error has occured trying to fetch the runners'
       })
     }
@@ -56,7 +56,7 @@ module.exports = {
       })
       res.send(runner)
     } catch (err) {
-      res.status(500).send({
+      return res.status(500).send({
         error: 'an error has occured trying to show the runners'
       })
     }
@@ -81,7 +81,7 @@ module.exports = {
       res.send(runner)
     } catch (err) {
       console.log(err)
-      res.status(500).send({
+      return res.status(500).send({
         error: 'an error has occured trying to show the runners'
       })
     }
@@ -101,7 +101,7 @@ module.exports = {
         res.send(runner)
       }
     } catch (err) {
-      res.status(500).send({
+      return res.status(500).send({
         error: 'an error has occured trying to create/update the runner'
       })
     }
@@ -115,7 +115,7 @@ module.exports = {
       })
       res.send(req.body)
     } catch (err) {
-      res.status(500).send({
+      return res.status(500).send({
         error: 'an error has occured trying to update the runner'
       })
     }
@@ -132,7 +132,7 @@ module.exports = {
       }
       res.send(runner)
     } catch (err) {
-      res.status(500).send({
+      return res.status(500).send({
         error: 'an error has occured trying to show the runners'
       })
     }

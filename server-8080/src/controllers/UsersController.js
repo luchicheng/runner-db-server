@@ -41,7 +41,7 @@ module.exports = {
       // console.log(users)
       res.send(users)
     } catch (err) {
-      res.status(500).send({
+      return res.status(500).send({
         error: 'an error has occured trying to fetch the users'
       })
     }
@@ -62,10 +62,9 @@ module.exports = {
           }
         })
         if (exstingUser) {
-          res.status(500).send({
+          return res.status(500).send({
             error: 'this ID is existed, new member creation failed.'
           })
-          return
         }
         req.body.password = '12345678'
         const user = await User.create(req.body)
@@ -73,7 +72,7 @@ module.exports = {
       }
     } catch (err) {
       console.log(err)
-      res.status(500).send({
+      return res.status(500).send({
         error: 'an error has occured trying to create/update the user'
       })
     }
@@ -92,7 +91,7 @@ module.exports = {
       }
       res.send(user)
     } catch (err) {
-      res.status(500).send({
+      return res.status(500).send({
         error: 'an error has occured trying to delete the users'
       })
     }

@@ -28,7 +28,7 @@ module.exports = {
       // console.log(races)
       res.send(races)
     } catch (err) {
-      res.status(500).send({
+      return res.status(500).send({
         error: 'an error has occured trying to fetch the races'
       })
     }
@@ -40,7 +40,7 @@ module.exports = {
       res.send(races)
     } catch (err) {
       console.log(err)
-      res.status(500).send({
+      return res.status(500).send({
         error: 'an error has occured trying to fetch all available races'
       })
     }
@@ -57,7 +57,7 @@ module.exports = {
       res.send(result)
     } catch (err) {
       console.log(err)
-      res.status(500).send({
+      return res.status(500).send({
         error: 'an error has occured trying to fetch all available races'
       })
     }
@@ -78,7 +78,7 @@ module.exports = {
       }
     } catch (err) {
       console.log(err)
-      res.status(500).send({
+      return res.status(500).send({
         error: 'an error has occured trying to create/update the race'
       })
     }
@@ -96,7 +96,7 @@ module.exports = {
       res.send(race)
     } catch (err) {
       console.log(err)
-      res.status(500).send({
+      return res.status(500).send({
         error: 'an error has occured trying to show the races'
       })
     }

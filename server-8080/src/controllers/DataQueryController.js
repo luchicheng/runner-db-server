@@ -71,7 +71,7 @@ module.exports = {
       res.send(runnerData)
     } catch (err) {
       console.log(err)
-      res.status(500).send({
+      return res.status(500).send({
         error: 'an error has occured trying to fetch the training record'
       })
     }
@@ -128,7 +128,7 @@ module.exports = {
       res.send(raceRecordData)
     } catch (err) {
       console.log(err)
-      res.status(500).send({
+      return res.status(500).send({
         error: 'an error has occured trying to fetch the race record'
       })
     }
@@ -143,7 +143,7 @@ module.exports = {
         whereConditionRunner.gender = gender
       } else {
         console.log('gender is mandatory to fetch the top race record')
-        res.status(500).send({
+        return res.status(500).send({
           error: 'an error has occured trying to fetch the top race record'
         })
       }
@@ -199,7 +199,7 @@ module.exports = {
       res.send(raceRecordData)
     } catch (err) {
       console.log(err)
-      res.status(500).send({
+      return res.status(500).send({
         error: 'an error has occured trying to fetch the top race record'
       })
     }

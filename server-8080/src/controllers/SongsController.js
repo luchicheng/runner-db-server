@@ -24,7 +24,7 @@ module.exports = {
       }
       res.send(songs)
     } catch (err) {
-      res.status(500).send({
+      return res.status(500).send({
         error: 'an error has occured trying to fetch the songs'
       })
     }
@@ -34,7 +34,7 @@ module.exports = {
       const song = await Song.findById(req.params.songId)
       res.send(song)
     } catch (err) {
-      res.status(500).send({
+      return res.status(500).send({
         error: 'an error has occured trying to show the songs'
       })
     }
@@ -44,7 +44,7 @@ module.exports = {
       const song = await Song.create(req.body)
       res.send(song)
     } catch (err) {
-      res.status(500).send({
+      return res.status(500).send({
         error: 'an error has occured trying to create the song'
       })
     }
@@ -58,7 +58,7 @@ module.exports = {
       })
       res.send(req.body)
     } catch (err) {
-      res.status(500).send({
+      return res.status(500).send({
         error: 'an error has occured trying to update the song'
       })
     }

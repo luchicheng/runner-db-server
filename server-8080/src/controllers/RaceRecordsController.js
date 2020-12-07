@@ -71,7 +71,7 @@ module.exports = {
       res.send(data)
     } catch (err) {
       console.log(err)
-      res.status(500).send({
+      return res.status(500).send({
         error: 'an error has occured trying to fetch the race record'
       })
     }
@@ -83,7 +83,7 @@ module.exports = {
       res.send(racerecord)
     } catch (err) {
       console.log(err)
-      res.status(500).send({
+      return res.status(500).send({
         error: 'an error has occured trying to create the race record object'
       })
     }
@@ -98,7 +98,7 @@ module.exports = {
       })
       res.send(req.body)
     } catch (err) {
-      res.status(500).send({
+      return res.status(500).send({
         error: 'an error has occured trying to update the RaceRecord'
       })
     }
@@ -120,7 +120,7 @@ module.exports = {
       await data.destroy()
       res.send(data)
     } catch (err) {
-      res.status(500).send({
+      return res.status(500).send({
         error: 'an error has occured trying to delete the race record'
       })
     }

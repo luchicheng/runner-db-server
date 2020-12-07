@@ -13,7 +13,7 @@ module.exports = {
       // console.log(albumName)
       // console.log(photos)
       if (albumName === '') {
-        res.status(500).send({
+        return res.status(500).send({
           error: 'Album name can not be empty.'
         })
       }
@@ -41,7 +41,7 @@ module.exports = {
       console.log('photo imported:', countphotos)
       if (countphotos === 0) {
         await Album.destroy({ where: { id: albumCreated.id } })
-        res.status(500).send({
+        return res.status(500).send({
           error: 'Import faild as all photos were imported already.'
 
         })
@@ -50,7 +50,7 @@ module.exports = {
       }
     } catch (err) {
       console.log(err)
-      res.status(500).send({
+      return res.status(500).send({
         error: 'an error has occured trying to import the photos'
       })
     }

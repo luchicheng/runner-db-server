@@ -36,7 +36,7 @@ module.exports = {
       // console.log(albums)
       res.send(albums)
     } catch (err) {
-      res.status(500).send({
+      return res.status(500).send({
         error: 'an error has occured trying to fetch the albums'
       })
     }
@@ -57,7 +57,7 @@ module.exports = {
       res.send(photos)
     } catch (err) {
       console.log(err)
-      res.status(500).send({
+      return res.status(500).send({
         error: 'an error has occured trying to fetch the albums'
       })
     }
@@ -78,7 +78,7 @@ module.exports = {
         res.send(album)
       }
     } catch (err) {
-      res.status(500).send({
+      return res.status(500).send({
         error: 'an error has occured trying to create/update the album'
       })
     }
@@ -95,7 +95,7 @@ module.exports = {
       }
       res.send(album)
     } catch (err) {
-      res.status(500).send({
+      return res.status(500).send({
         error: 'an error has occured trying to show the albums'
       })
     }
