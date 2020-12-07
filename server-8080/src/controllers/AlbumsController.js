@@ -71,6 +71,8 @@ module.exports = {
             id: req.body.id
           }
         })
+        res.send(req.body)
+        return
       } else {
         const album = await Album.create(req.body)
         res.send(album)

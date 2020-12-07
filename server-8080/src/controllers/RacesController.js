@@ -71,6 +71,7 @@ module.exports = {
             id: req.body.id
           }
         })
+        res.send(req.body)
       } else {
         const race = await Race.create(req.body)
         res.send(race)

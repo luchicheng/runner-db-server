@@ -95,6 +95,7 @@ module.exports = {
             id: req.body.id
           }
         })
+        res.send(req.body)
       } else {
         const runner = await Runner.create(req.body)
         res.send(runner)

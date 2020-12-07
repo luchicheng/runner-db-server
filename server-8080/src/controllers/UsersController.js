@@ -48,13 +48,13 @@ module.exports = {
   },
   async post (req, res) {
     try {
-      console.log('user id.....', req.body.id)
       if (req.body.id) {
         await User.update(req.body, {
           where: {
             id: req.body.id
           }
         })
+        res.send(req.body)
       } else {
         const exstingUser = await User.findOne({
           where: {
