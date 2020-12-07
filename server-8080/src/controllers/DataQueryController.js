@@ -195,7 +195,14 @@ module.exports = {
         rrd.Runner = null
         rrd.Race = null
       })
-
+      for (var i = 0; i < number; i++) {
+        if (typeof raceRecordData[i] !== 'undefined') {
+          raceRecordData[i].index = i + 1
+        } else {
+          // raceRecordData[i] = { index: i + 1 }
+        }
+      }
+      // console.log('returned top data:' + JSON.stringify(raceRecordData))
       res.send(raceRecordData)
     } catch (err) {
       console.log(err)
