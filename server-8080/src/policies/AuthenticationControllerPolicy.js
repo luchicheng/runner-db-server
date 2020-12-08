@@ -3,17 +3,28 @@ const Joi = require('joi')
 module.exports = {
   register (req, res, next) {
     const schema = {
-      email: Joi.string().email(),
-      password: Joi.string().regex(
-        new RegExp('^[a-zA-Z0-9]{8,32}$')
-      )
+      userInfo: {
+        // email2: Joi.string().email(),
+        password: Joi.string().regex(
+          new RegExp('^[a-zA-Z0-9]{8,32}$')
+        )
+      },
+      runnerInfo: {
+      }
     }
 
-    const {error} = Joi.validate(req.body, schema)
+    // Joi validation options
+    const _validationOptions = {
+      abortEarly: false, // abort after the last validation error
+      allowUnknown: true, // allow unknown keys that will be ignored
+      stripUnknown: false // remove unknown keys from the validated data
+    }
 
+    const {error} = Joi.validate(req.body, schema, _validationOptions)
+    console.log(error)
     if (error) {
       switch (error.details[0].context.key) {
-        case 'email':
+        case 'email2':
           res.status(400).send({
             error: 'You must provide a valid email address'
           })

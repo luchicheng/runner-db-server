@@ -9,7 +9,12 @@ module.exports = (sequelize, DataTypes) => {
     eName: DataTypes.STRING,
     ePhone: DataTypes.STRING,
     comment: DataTypes.STRING,
-    goalRaceTime: DataTypes.STRING
+    goalRaceTime: DataTypes.STRING,
+    referer: DataTypes.STRING,
+    personalBest: DataTypes.STRING,
+    runningAge: DataTypes.STRING,
+    otherSportsHobbies: DataTypes.STRING,
+    personalTarget: DataTypes.STRING
   })
 
   Runner.associate = function (models) {

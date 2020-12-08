@@ -12,15 +12,41 @@ function jwtSignUser (user) {
 module.exports = {
   async register (req, res) {
     try {
-      const user = await User.create(req.body)
+      let userInfo = req.body.userInfo
+      const runnerInfo = req.body.runnerInfo
+      const existUser = await User.findOne({
+        where: {
+          email: userInfo.email
+        }
+      })
+      if (existUser) {
+        return res.status(500).send({
+          error: 'This ID already exists, please change to another one.'
+        })
+      }
+      const runner = await Runner.create(runnerInfo)
+      const TODAY = new Date().toISOString().slice(0, 10)
+      userInfo.RunnerId = runner.id
+      userInfo.registerDate = TODAY
+      var dt = new Date()
+      dt.setMonth(dt.getMonth() + 1)
+      const ONE_MONTH_LATER = dt.toISOString().slice(0, 10)
+
+      // give one month free
+      userInfo.userType = 'R'
+      userInfo.membershipExprireDate = ONE_MONTH_LATER
+      userInfo.status = 'I'
+      userInfo.comment = runnerInfo.name
+      const user = await User.create(userInfo)
       const userJson = user.toJSON()
+      // dont' send token back, as we leave the user inactive
       res.send({
-        user: userJson,
-        token: jwtSignUser(userJson)
+        user: userJson
+        // token: jwtSignUser(userJson)
       })
     } catch (err) {
-      res.status(400).send({
-        error: 'This email account is already in use.'
+      return res.status(400).send({
+        error: 'An error has occured trying to register this user.'
       })
     }
   },
@@ -48,7 +74,7 @@ module.exports = {
       }
     } catch (err) {
       return res.status(500).send({
-        error: 'an error has occured trying to reset user password'
+        error: 'An error has occured trying to reset user password'
       })
     }
   },

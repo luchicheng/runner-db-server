@@ -137,12 +137,12 @@ module.exports = (app) => {
     // isAuthenticated,
     AlbumsController.indexPhotos)
   app.get('/backapi/users',
-    // isAuthenticated,
+    isAuthenticated,
     UsersController.index)
   app.post('/backapi/users',
-    // isAuthenticated,
+    isAuthenticated,
     UsersController.post)
   app.delete('/backapi/users/:userId',
-    // isAuthenticated,
+    isAuthenticated,
     UsersController.del)
 }

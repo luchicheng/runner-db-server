@@ -27,7 +27,10 @@ module.exports = (sequelize, DataTypes) => {
     membershipExprireDate: DataTypes.DATEONLY,
     // status: A: active; I: Inactive
     status: DataTypes.STRING(1),
-    comment: DataTypes.STRING
+    comment: DataTypes.STRING,
+    address: DataTypes.STRING,
+    email2: DataTypes.STRING,
+    registerDate: DataTypes.DATEONLY
   }, {
     hooks: {
       beforeCreate: hashPassword,
