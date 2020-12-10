@@ -86,6 +86,15 @@ module.exports = {
             id: req.params.userId
           }
         })
+        const rId = user.RunnerId
+        const runner = await Runner.findById(rId)
+        if (runner) {
+          await Runner.destroy({
+            where: {
+              id: rId
+            }
+          })
+        }
       }
       res.send(user)
     } catch (err) {
