@@ -18,14 +18,15 @@
     "bluebird": "^3.5.0",
     "body-parser": "^1.17.2",
     "cors": "^2.8.4",
-    "express": "^4.15.4",
+    "express": "^4.17.1",
     "joi": "^10.6.0",
     "jsonwebtoken": "^8.0.0",
-    "morgan": "^1.8.2",
+    "morgan": "^1.10.0",
     "passport": "^0.4.0",
     "passport-jwt": "^3.0.0",
     "sequelize": "^4.8.0",
-    "sqlite3": "^4.1.1"
+    "sqlite3": "^4.1.1",
+    "stripe": "^8.129.0"
   },
   "devDependencies": {
     "eslint-config-standard": "^10.2.1",

@@ -11,6 +11,7 @@ const DataQueryController = require('./controllers/DataQueryController')
 const PhotosController = require('./controllers/PhotosController')
 const AlbumsController = require('./controllers/AlbumsController')
 const UsersController = require('./controllers/UsersController')
+const PaymentController = require('./controllers/PaymentController')
 
 const isAuthenticated = require('./policies/isAuthenticated')
 
@@ -145,4 +146,19 @@ module.exports = (app) => {
   app.delete('/backapi/users/:userId',
     isAuthenticated,
     UsersController.del)
+  app.post('/backapi/payment/checkout',
+    isAuthenticated,
+    PaymentController.createCheckoutSession)
+  app.get('/backapi/payment/success',
+    isAuthenticated,
+    PaymentController.markSuccessPaymentSession)
+  app.get('/backapi/payments',
+    isAuthenticated,
+    PaymentController.index)
+  app.post('/backapi/payments',
+    isAuthenticated,
+    PaymentController.post)
+  app.delete('/backapi/payments/:paymentId',
+    isAuthenticated,
+    PaymentController.del)
 }
