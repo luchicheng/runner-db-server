@@ -147,7 +147,9 @@ module.exports = {
           error: 'an error has occured trying to fetch the top race record'
         })
       }
-      let whereConditionRace = {}
+      let whereConditionRace = {
+        distance: '42.2K'
+      }
       if (typeof year !== 'undefined') {
         const date1 = year + '-01-01'
         const date2 = year + '-12-31'
