@@ -24,7 +24,7 @@
     "morgan": "^1.10.0",
     "passport": "^0.4.0",
     "passport-jwt": "^3.0.0",
-    "sequelize": "^4.8.0",
+    "sequelize": "^6.29.0",
     "sqlite3": "^4.1.1",
     "stripe": "^8.129.0"
   },
