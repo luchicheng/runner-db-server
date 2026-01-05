@@ -14,6 +14,10 @@ const UsersController = require('./controllers/UsersController')
 const PaymentController = require('./controllers/PaymentController')
 
 const isAuthenticated = require('./policies/isAuthenticated')
+const { fetchAndQueueAdminEmails } = require('./controllers/FetchAndQueueAdminEmailsController')
+
+const { start, stop, sendEmailJobOnce } = require('./jobs/emailJobScheduler')
+const { logger } = require('./utils/logger') || console
 
 module.exports = (app) => {
   app.post('/backapi/register',
@@ -161,4 +165,44 @@ module.exports = (app) => {
   app.delete('/backapi/payments/:paymentId',
     isAuthenticated,
     PaymentController.del)
+  app.post('/backapi/email/fetch',
+    isAuthenticated, async (req, res) => {
+      try {
+        const result = await fetchAndQueueAdminEmails()
+        return res.json({ ok: true, queued: result })
+      } catch (err) {
+        console.error('Error fetching admin emails:', err)
+        return res.status(500).json({ ok: false, error: err.message || String(err) })
+      }
+    })
+  app.post('/backapi/email/sendOnce', isAuthenticated, async (req, res) => {
+    try {
+      logger.info('Manual trigger: /backapi/email/sendOnce')
+      await sendEmailJobOnce()
+      return res.json({ ok: true, message: 'sendEmailJobOnce invoked' })
+    } catch (err) {
+      logger.error('Error invoking sendEmailJobOnce', err)
+      return res.status(500).json({ ok: false, error: err && err.message ? err.message : String(err) })
+    }
+  })
+  app.post('/backapi/emailJob/start', isAuthenticated, async (req, res) => {
+    try {
+      logger.info('Manual trigger: /backapi/emailJob/start')
+      await start()
+      return res.json({ ok: true, message: 'Email job started' })
+    } catch (err) {
+      logger.error('Error invoking Email job started', err)
+      return res.status(500).json({ ok: false, error: err && err.message ? err.message : String(err) })
+    }
+  })
+  app.post('/backapi/emailJob/stop', isAuthenticated, async (req, res) => {
+    try {
+      logger.info('Manual trigger: /backapi/emailJob/stop')
+      await stop()
+      return res.json({ ok: true, message: 'Email job stopped' })
+    } catch (err) {
+      logger.error('Error invoking Email job stopped', err)
+      return res.status(500).json({ ok: false, error: err && err.message ? err.message : String(err) })
+    }
+  })
 }

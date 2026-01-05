@@ -4,6 +4,7 @@ const cors = require('cors')
 const morgan = require('morgan')
 const {sequelize} = require('./models')
 const config = require('./config/config')
+const emailJobScheduler = require('./jobs/emailJobScheduler')
 
 const app = express()
 app.use(morgan('combined'))
@@ -18,4 +19,5 @@ sequelize.sync({force: false})
   .then(() => {
     app.listen(config.port)
     console.log(`Server started on port ${config.port}`)
+    emailJobScheduler.start()
   })

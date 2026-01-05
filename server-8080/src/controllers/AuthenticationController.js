@@ -81,6 +81,7 @@ module.exports = {
   async login (req, res) {
     try {
       const {email, password} = req.body
+      console.log('returned top data:' + JSON.stringify(req.body))
       const user = await User.findOne({
         where: {
           email: email
@@ -125,6 +126,7 @@ module.exports = {
         token: jwtSignUser(userJson)
       })
     } catch (err) {
+      console.log('returned err:' + JSON.stringify(err))
       return res.status(500).send({
         error: 'An error has occured trying to log in'
       })

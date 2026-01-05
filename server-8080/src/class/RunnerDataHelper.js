@@ -3,7 +3,7 @@
 function RunnerDataHelper () {
 }
 // Sets the age
-// 
+//
 // RunnerDataHelper.prototype.setDob = function (dob) {
 //   this.dob = dob
 // }
@@ -43,7 +43,7 @@ RunnerDataHelper.getAgeGroup = function (dob) {
   return ret
 }
 //  Sets the RunnerData object to module.exports
-// 
+//
 const nextBqQualificationDate = new Date('2021-04-21')
 const nextBqQualificationTable = [
   {'age_min': 18, 'age_max': 34, 'time4male': '30000', 'time4female': '33000'},

@@ -9,6 +9,10 @@ yarn-error.log*
 selenium-debug.log
 *.sqlite
 dbbackup
+.env
+.env.*.local
+# .env.*
+# optional: ignore environment files
 
 # Editor directories and files
 .idea

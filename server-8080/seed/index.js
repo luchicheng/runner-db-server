@@ -9,7 +9,9 @@ const {
   TrainingRecord,
   RaceRecord,
   Album,
-  Photo
+  Photo,
+  Email,
+  EmailSendingRequest
 } = require('../src/models')
 
 let {
@@ -28,6 +30,8 @@ const trainingRecords = require('./trainingrecord.json')
 const raceRecords = require('./racerecord.json')
 const photo = require('./photo.json')
 const album = require('./album.json')
+const email = require('./email.json')
+const emailSendingRequest = require('./emailsendingrequest.json')
 
 sequelize.sync({ force: true })
   .then(async function () {
@@ -89,6 +93,18 @@ sequelize.sync({ force: true })
     await Promise.all(
       photo.map(tr => {
         Photo.create(tr)
+      })
+    )
+
+    await Promise.all(
+      email.map(tr => {
+        Email.create(tr)
+      })
+    )
+
+    await Promise.all(
+      emailSendingRequest.map(tr => {
+        EmailSendingRequest.create(tr)
       })
     )
 

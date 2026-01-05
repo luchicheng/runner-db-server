@@ -1,7 +1,8 @@
 // Set your secret key. Remember to switch to your live secret key in production!
 // See your keys here: https://dashboard.stripe.com/account/apikeys
 const Stripe = require('stripe')
-const stripe = Stripe('sk_test_w1cfkNfiqguzNBdkatDX6gDY')
+const config = require('../config/config')
+const stripe = Stripe(config.stripe.secretKey)
 const forSaleService = [
   { invId: 1, name: 'Merchandise Payment', image: 'merchandise.jpg', description: '商品费用支付，如果不足请在购物车内更改数量。', category: 'Merch Goods', price: 10 },
   { invId: 2, name: 'Training Fee', image: 'fee.jpg', description: '训练费用支付，如果不足请在购物车内更改数量。', category: 'Service', price: 20 },
