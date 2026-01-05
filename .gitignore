@@ -11,7 +11,7 @@ selenium-debug.log
 dbbackup
 .env
 .env.*.local
-# .env.*
+.env.*
 # optional: ignore environment files
 
 # Editor directories and files
