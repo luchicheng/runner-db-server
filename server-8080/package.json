@@ -4,11 +4,12 @@
   "description": "Runner DB application server side built on node express",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/app.js --exec  \"npm run lint && node\"",
+    "start": "nodemon src/app.js --exec \"npm run lint && node\"",
     "lint": "eslint src/**/*.js",
     "lint:fix": "eslint src/**/*.js  --fix",
     "seed": "node seed",
-    "unseed": "node unseed"
+    "unseed": "node unseed",
+    "test": "jest"
   },
   "keywords": [],
   "author": "Luchi Cheng,luchi.cheng@gmail.com",
@@ -38,6 +39,7 @@
     "eslint-plugin-node": "^5.1.1",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
+    "jest": "^29.7.0",
     "nodemon": "^1.11.0"
   }
 }

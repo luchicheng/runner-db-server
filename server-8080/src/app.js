@@ -19,5 +19,9 @@ sequelize.sync({force: false})
   .then(() => {
     app.listen(config.port)
     console.log(`Server started on port ${config.port}`)
-    emailJobScheduler.start()
+    if (config.emailJobAutoStart) {
+      emailJobScheduler.start()
+    } else {
+      console.log('Email job scheduler initial status: STOPPED (set EMAIL_JOB_AUTOSTART=true to auto-start)')
+    }
   })

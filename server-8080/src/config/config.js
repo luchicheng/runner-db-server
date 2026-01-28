@@ -1,10 +1,29 @@
 const path = require('path')
 const dotenv = require('dotenv')
-
+console.log('Loading environment variables...')
 const env = process.env.NODE_ENV || 'development'
+console.log(`Current environment: ${env}`)
+console.log(`Current working directory: ${process.cwd()}`)
 // load common .env then override with .env.{env} if present
-dotenv.config({ path: path.resolve(process.cwd(), '.env') })
-dotenv.config({ path: path.resolve(process.cwd(), `.env.${env}`) })
+const envEnvPath = path.resolve(process.cwd(), `.env.${env}`)
+console.log(`Looking for .env.${env} at: ${envEnvPath}`)
+const result2 = dotenv.config({ path: envEnvPath })
+if (result2.error) {
+  console.log(`.env.${env} file not found or error: ${result2.error.message}`)
+}
+
+console.log('Environment variables loaded:', {
+  NODE_ENV: env,
+  EMAIL_USER: process.env.EMAIL_USER,
+  IMAP_HOST: process.env.IMAP_HOST,
+  IMAP_PORT: process.env.IMAP_PORT,
+  SMTP_HOST: process.env.SMTP_HOST,
+  SMTP_PORT: process.env.SMTP_PORT,
+  EMAIL_JOB_INTERVAL: process.env.EMAIL_JOB_INTERVAL,
+  EMAIL_JOB_BATCH_SIZE: process.env.EMAIL_JOB_BATCH_SIZE,
+  EMAIL_JOB_AUTOSTART: process.env.EMAIL_JOB_AUTOSTART,
+  STRIPE_API_KEY: process.env.STRIPE_API_KEY ? '***set***' : undefined
+})
 
 module.exports = {
   port: process.env.PORT || 8081,
@@ -40,6 +59,7 @@ module.exports = {
   },
   emailJobIntervalSeconds: Number(process.env.EMAIL_JOB_INTERVAL || 60),
   emailJobBatchSize: Number(process.env.EMAIL_JOB_BATCH_SIZE || 1),
+  emailJobAutoStart: (process.env.EMAIL_JOB_AUTOSTART || 'false') === 'true',
   stripe: {
     secretKey: process.env.STRIPE_API_KEY
   }

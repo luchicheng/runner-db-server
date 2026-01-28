@@ -12,6 +12,7 @@ const PhotosController = require('./controllers/PhotosController')
 const AlbumsController = require('./controllers/AlbumsController')
 const UsersController = require('./controllers/UsersController')
 const PaymentController = require('./controllers/PaymentController')
+const EmailSendingRequestsController = require('./controllers/EmailSendingRequestsController')
 
 const isAuthenticated = require('./policies/isAuthenticated')
 const { fetchAndQueueAdminEmails } = require('./controllers/FetchAndQueueAdminEmailsController')
@@ -165,6 +166,21 @@ module.exports = (app) => {
   app.delete('/backapi/payments/:paymentId',
     isAuthenticated,
     PaymentController.del)
+  app.get('/backapi/emailrequests',
+    isAuthenticated,
+    EmailSendingRequestsController.index)
+  app.get('/backapi/emailrequests/:emailRequestId',
+    isAuthenticated,
+    EmailSendingRequestsController.show)
+  app.post('/backapi/emailrequests',
+    isAuthenticated,
+    EmailSendingRequestsController.post)
+  app.put('/backapi/emailrequests/:emailRequestId',
+    isAuthenticated,
+    EmailSendingRequestsController.put)
+  app.delete('/backapi/emailrequests/:emailRequestId',
+    isAuthenticated,
+    EmailSendingRequestsController.del)
   app.post('/backapi/email/fetch',
     isAuthenticated, async (req, res) => {
       try {
@@ -189,7 +205,7 @@ module.exports = (app) => {
     try {
       logger.info('Manual trigger: /backapi/emailJob/start')
       await start()
-      return res.json({ ok: true, message: 'Email job started' })
+      return res.json({ ok: true, message: 'Email sending job started' })
     } catch (err) {
       logger.error('Error invoking Email job started', err)
       return res.status(500).json({ ok: false, error: err && err.message ? err.message : String(err) })
@@ -201,7 +217,7 @@ module.exports = (app) => {
       await stop()
       return res.json({ ok: true, message: 'Email job stopped' })
     } catch (err) {
-      logger.error('Error invoking Email job stopped', err)
+      logger.error('Error invoking Email sending job stopped', err)
       return res.status(500).json({ ok: false, error: err && err.message ? err.message : String(err) })
     }
   })

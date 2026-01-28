@@ -81,7 +81,6 @@ module.exports = {
   async login (req, res) {
     try {
       const {email, password} = req.body
-      console.log('returned top data:' + JSON.stringify(req.body))
       const user = await User.findOne({
         where: {
           email: email
